@@ -4,13 +4,13 @@
 
 The source data was compiled by
 
-> Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto. 
-> Smartlab - Non Linear Complex Systems Laboratory 
-> DITEN - UniversitÃ  degli Studi di Genova, Genoa I-16145, Italy. 
-> activityrecognition '@' smartlab.ws 
-> www.smartlab.ws 
+> * Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto. 
+> * Smartlab - Non Linear Complex Systems Laboratory 
+> * DITEN - UniversitÃ  degli Studi di Genova, Genoa I-16145, Italy. 
+> * activityrecognition '@' smartlab.ws 
+> * www.smartlab.ws 
 
-It is distributed at the (UCI Machine Learning Repository)[http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones] as (UCI HAR Dataset.zip)[http://archive.ics.uci.edu/ml/machine-learning-databases/00240/UCI%20HAR%20Dataset.zip]
+It is distributed at the [UCI Machine Learning Repository](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) as [UCI HAR Dataset.zip](http://archive.ics.uci.edu/ml/machine-learning-databases/00240/UCI%20HAR%20Dataset.zip)
 
 The original dataset contains several files: training and test files containing feature vectors and separate subject and activity files describing the feature vectors.
 
@@ -24,11 +24,11 @@ Labels have been modified to make their meaning clearer and easier to use with R
 
 From the original measurements only the ones concerning means and standard deviations have been retained.
 
-Finally, per activity and per subject the mean of all, retained, measurements has been calculated. The result can be found in (`tidyFeatureMeans.txt`)[tidyFeatureMeans.txt].
+Finally, per activity and per subject the arithmetic mean of all, retained, measurements has been calculated. The result can be found in (`tidyFeatureMeans.txt`)[tidyFeatureMeans.txt].
 
 ## The variables
 
-There are two set of variables: those describe the context and those that are means of measurements (or estimations).
+There are two set of variables: those describing the context and those that are arithmetic means of measurements (or estimations).
 
 ### Context variables
 
@@ -37,13 +37,13 @@ There are two set of variables: those describe the context and those that are me
 
 ### Measurements
 
-These are all means of measurements belonging to one subject performing one activity. For the low-level detail you are invited to read the file `features_info.txt`. It describes data windows, sampling intervals and filters applied to raw sensor data to come up with the source data for the UCI dataset.
+These are all arithmetic means of measurements belonging to one subject performing one activity. For the low-level detail you are invited to read the file `features_info.txt`. It describes data windows, sampling intervals and filters applied to raw sensor data to come up with the source data for the UCI dataset.
 
 All measurement labels follow a fixed pattern: {SignalName} _ {Component} _ {Domain} _ {Stat}.
  * SignalName: the estimated signal
  * Component: `X`, `Y`, `Z` for the signal along the 3 spatial orthogonal axes (presumably as defined by the API of the smartphone used for the measurments) and `Magnitude` for the magnitude of the signal according to the L2 norm.
  * Domain: `Time` or `Frequency` for signals in the time, respectively the frequency domain. The frequency domain signal have been obtained by an FFT.
- * Stat: `Mean` or `StdDev` for respectively the mean or the standard deviation in the raw source data windows.
+ * Stat: `Mean` or `StdDev` for respectively the arithmetic mean or the standard deviation in the raw source data windows.
 
 All source measurements were normalised in the range [-1, 1] and are thus unitless.
 
@@ -91,7 +91,7 @@ Measurements describing body angular velocity. The denoised gyroscope signal.
 
 #### BodyAccJerk
 
-Measurements describing the first derivative of body linear acceleration.
+Measurements describing the first derivative of the body linear acceleration.
 
  * `BodyAccJerk_Magnitude_Frequency_Mean` 
  * `BodyAccJerk_Magnitude_Frequency_StdDev` 
@@ -112,7 +112,7 @@ Measurements describing the first derivative of body linear acceleration.
 
 #### BodyGyroJerk
 
-Measurements describing the first describing of the body angular velocity.
+Measurements describing the first derivative of the body angular velocity.
 
  * `BodyGyroJerk_Magnitude_Frequency_Mean` 
  * `BodyGyroJerk_Magnitude_Frequency_StdDev`
