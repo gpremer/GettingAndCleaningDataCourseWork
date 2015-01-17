@@ -12,7 +12,7 @@ Executing the R script [run_analysis.R](run_analysis.R) in the directory contain
 
 ## Transformations in the script
 
-The [codebook](Codebook.md) describes the logical transformations to the data. The [run_analysis.R](run_analysis.R) is heavily commented, but the structure is as follows:
+The [codebook](Codebook.md) describes the logical transformations to the data. The [run_analysis.R](run_analysis.R) script is heavily commented, but the structure is as follows:
 
 * Read test subject, activity ids and feature vectors in separate data frames
 * Read training subject, activity ids and feature vectors in separate data frames
