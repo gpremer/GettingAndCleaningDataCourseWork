@@ -22,7 +22,7 @@ The training and testing feature vectors have been combined into one. Informatio
 
 Labels have been modified to make their meaning clearer and easier to use with R.
 
-From the original measurements only the ones concerning means and standard deviations have been retained.
+From the original measurements only the ones concerning means and standard deviations have been retained. Some measurements hold a mean over frequencies in a sample (.*meanFreq in the original dataset). Those have not been included.
 
 Finally, per activity and per subject the arithmetic mean of all, retained, measurements has been calculated. The result can be found in (`tidyFeatureMeans.txt`)[tidyFeatureMeans.txt].
 
