@@ -37,7 +37,6 @@ read_uci_labels <- function(file) {
 
 # Assume data is extracted in the current directory, go to data directory
 setwd("./UCI HAR Dataset/")
-data_dir <- getwd()
 
 # load base data
 test_subjects <- read_uci_numbers("test/subject_test.txt")
@@ -93,7 +92,8 @@ feature_means <- labeled_features %>%
   summarise_each (funs(mean))         # Calculate the mean for every other column
 
 # Finally write to disk
-write.table(feature_means, "../tidyFeatureMeans.txt", row.names = FALSE)
+setwd("..")
+write.table(feature_means, "tidyFeatureMeans.txt", row.names = FALSE)
 
 # Read data back
 # fm <- read.table("../tidyFeatureMeans.txt", header=TRUE)
