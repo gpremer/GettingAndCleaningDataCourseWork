@@ -26,3 +26,7 @@ The [codebook](Codebook.md) describes the logical transformations to the data. T
 * The activity id is removed again as it is not required
 * Each variable is averaged per subject and activity
 * The result is written as [tidyFeaturesMeans.txt](tidyFeaturesMeans.txt)
+
+## Prerequisites
+
+The downloaded and extracted data files as explained above and a recent version of the [dplyr](http://cran.r-project.org/web/packages/dplyr/index.html) package. Tested with version 0.4.0.
