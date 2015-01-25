@@ -1,4 +1,4 @@
-# Coursera's Getting and Cleaning Data  Course Project
+# Coursera's "Getting and Cleaning Data" course project
 
 This repository is part of the requirements for the course project of for Coursera's Getting and cleaning data MOOC.
 
